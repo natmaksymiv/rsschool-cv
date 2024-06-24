@@ -2,6 +2,8 @@
 
 #### Junior Frontend Developer
 
+![image](..working_laptop.webp)
+
 ## Contact:
 
 - E-mail: n.maksymiv01@gmail.com
