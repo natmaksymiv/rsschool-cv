@@ -41,19 +41,20 @@
 
 ## Code Example:
 
-```const addItem = document.querySelector(".task__text .task-one__list")
+```const header = document.querySelector (".header")
 
-addItem.insertAdjacentHTML("beforeend", `‹li class = "task-one__item"›1‹/li›`)
-document.addEventListener("click", documentAction);
+header.addEventListener("mouseenter", mouseOver);
+header.addEventListener("mouseleave", mouseLeave);
+const footerBackground = document.querySelector("footer")
 
-function documentAction(e) {
-  const elementTarget = e.target
-  if (elementTarget.closest(".task-one__item")) {
-    // const currentElement = elementTarget.closest(".task-one__item")
-    // currentElement.classList.toggle("active")
-
-    elementTarget.closest(".task-one__item").classList.toggle("active")
+function mouseOver(e) {
+  if (e.type === "mouseenter") {
+    footerBackground.style.backgroundColor = "red"
   }
-  e.preventDefault()
+
 }
 ```
+
+## Language:
+
+- English-B1
