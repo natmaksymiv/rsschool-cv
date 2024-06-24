@@ -2,7 +2,7 @@
 
 #### Junior Frontend Developer
 
-![image](/Users/ntatarskaya/Documents/rsschool_2024/working_laptop.webp)
+![img](office.jpg)
 
 ## Contact:
 
