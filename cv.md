@@ -43,7 +43,7 @@
 
 ## Code Example:
 
-```const header = document.querySelector (".header")
+``` const header = document.querySelector (".header")
 
 header.addEventListener("mouseenter", mouseOver);
 header.addEventListener("mouseleave", mouseLeave);
@@ -55,7 +55,7 @@ function mouseOver(e) {
   }
 
 }
-```
+ ```
 
 ## Language:
 
