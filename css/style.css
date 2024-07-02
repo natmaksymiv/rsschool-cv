@@ -1,2 +1,52 @@
 @import url(reset.css);
 @import url(fonts.css);
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+    font-family: 'Noto Sans Condensed', sans-serif;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex-grow: 1;
+  }
+[class*="__container"]{
+    max-width: 1230px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+/* -----H E A D E R----- */
+
+.header {
+    padding: 25px 0;
+    background-color: #bd97f3;
+}
+
+.nav {
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__item {
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+.nav__link {}
