@@ -17,6 +17,7 @@ h2 {
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 1px;
+    color: #5ea0da;
 }
 h2 {
     margin-bottom: 25px;
@@ -98,12 +99,10 @@ main {
     box-shadow: 0 1px 4px rgba(82, 15, 119, 0.6);;
 }
 .contacts {
-    display: flex;
-    flex-direction: column;
     align-self: center;
+    margin-bottom: 50px;
 }
 .contacts__list {
-    align-self: center;
 }
 .contacts__item {
     position: relative;
@@ -131,3 +130,12 @@ main {
     margin-bottom: 15px;
 }
 
+/* skills */
+.skills {
+    display: flex;
+    justify-content: space-evenly;
+}
+.technical__item,
+.soft__item:not(:last-child) {
+    margin-bottom: 15px;
+}
