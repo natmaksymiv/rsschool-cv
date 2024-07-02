@@ -11,6 +11,16 @@ html {
 body {
     font-family: 'Noto Sans Condensed', sans-serif;
 }
+h1,
+h2 {
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+h2 {
+    margin-bottom: 25px;
+}
 .wrapper {
     min-height: 100%;
     overflow: clip;
@@ -32,11 +42,11 @@ main {
 
 .header {
     padding: 25px 0;
-    background-color: #bd97f3;
+    background-color: #5ea0da;
+    margin-bottom: 50px;
 }
 
-.nav {
-}
+
 
 .nav__list {
     display: flex;
@@ -50,3 +60,74 @@ main {
 }
 
 .nav__link {}
+
+
+/* ----M A I N------- */
+
+.main__container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.profile {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.profile__title:not(:last-child) {
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+
+
+.profile__description p {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.profile__img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    aspect-ratio: 3 / 2;
+    box-shadow: 0 1px 4px rgba(82, 15, 119, 0.6);;
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.contacts__list {
+    align-self: center;
+}
+.contacts__item {
+    position: relative;
+}
+.contacts__item::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -30px;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.contacts__item:nth-child(1)::before {
+    background-image: url(../img/icons/mail_20dp.svg);
+}
+.contacts__item:nth-child(2)::before {
+    background-image: url(../img/icons/github.svg);
+}
+.contacts__item:nth-child(3)::before {
+    background-image: url(../img/icons/discord.svg);
+}
+.contacts__item:not(:last-child) {
+    margin-bottom: 15px;
+}
+
