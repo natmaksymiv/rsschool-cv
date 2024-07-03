@@ -165,5 +165,24 @@ main {
 
 
 
-
-
+.footer {
+    padding: 25px 0;
+    background-color: #5ea0da;
+}
+.footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-content__year-github {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+.rss {
+    width: 121px;
+    height: 45px;
+    background-image: url(../img/icons/rss.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
