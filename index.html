@@ -4,14 +4,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="shortcut icon" href="img/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Natalie Maksymiv CV</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header class="header"></header>
-    <main class="main"></main>
-    <footer class="footer"></footer>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">about me</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contacts" class="nav__link">Contacts</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#code" class="nav__link">code</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link">education</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#language" class="nav__link">language</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main__container">
+                <section class="profile">
+                    <img class="profile__img" src="img/avatar.jpg" alt="profile image">
+                    <div class="profile__description">
+                        <h1 class="profile__title">maksymiv natalie</h1>
+                        <p class="profile__subtitle">junior front-end developer</p>
+                    </div>
+                </section>
+                <section class="personal-info">
+                    <div class="contacts" id="contacts">
+                        <h2>contacts:</h2>
+                        <ul class="contacts__list">
+                            <li class="contacts__item">
+                                <a href="mailto:n.maksymiv@gmail.com" class="contacts__link">E-mail:
+                                    n.maksymiv@gmail.com</a>
+                            </li>
+                            <li class="contacts__item">
+                                <a href="https://github.com/natmaksymiv" class="contacts__list">Github: natmaksymiv</a>
+                            </li>
+                            <li class="contacts__item">
+                                <a href="https://discord.com/channels/516715744646660106/920695268998021231"
+                                    class="contacts__list">Discord: nataliia0756</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="about" id="about">
+                        <h2>about me</h2>
+                        <p>My goal is to start a career junior front-end developer and develop in this area. I actively
+                            study programming languages. I have good analytical skills. Easy to learn. I work well in a
+                            team.
+                        </p>
+                    </div>
+                </section>
+                <div class="info">
+                    <section class="skills" id="skills">
+                        <div class="skills__technical technical">
+                            <h2>technical skills:</h2>
+                            <ul class="technical__list">
+                                <li class="technical__item">JS</li>
+                                <li class="technical__item">HTML</li>
+                                <li class="technical__item">CSS</li>
+                                <li class="technical__item">Figma</li>
+                                <li class="technical__item">Adobe Photoshop</li>
+                                <li class="technical__item">3D Maya</li>
+                                <li class="technical__item">Zbrush</li>
+                            </ul>
+                        </div>
+                        <div class="skills__soft soft">
+                            <h2>soft skills:</h2>
+                            <ul class="soft__list">
+                                <li class="soft__item">Responsible and Organized</li>
+                                <li class="soft__item">Attentive to Details</li>
+                                <li class="soft__item">Team Player</li>
+                                <li class="soft__item">Open to New Knowledge</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="examples">
+                        <div class="examples__code" id="code">
+                            <h2>code:</h2>
+                            <pre>
+                                <code>
+let someArray = ["10", false, "", 10, "Natali"];
+
+if (Array.isArray(someArray)) {
+someArray.forEach((item, index) => {
+if (someArray[index] !== 10) {
+console.log(item);
+console.log('error');
+} else {
+console.log(item);
+console.log('ok');
+}
+})
+}
+                                </code>
+                            </pre>
+                        </div>
+                        <div class="examples__projects" id="projects">
+                            <h2>projects:</h2>
+                            <a href="https://github.com/natmaksymiv">CV (educational project)</a>
+                        </div>
+                    </section>
+                    <section class="learning">
+                        <div class="learning__education education" id="education">
+                            <h2>Education:</h2>
+                            <ul class="education__list">
+                                <li class="education__item">
+                                    <a href="https://rs.school/courses/javascript-preschool-ru"
+                                        class="education__link">JS/FE Pre-school</a>
+                                </li>
+                                <li class="education__item">
+                                    <a href="https://itlogia.ru/" class="education__link">ITlogia</a>
+                                </li>
+                                <li class="education__item">
+                                    <a href="https://3d-ace.com/" class="education__link">3D Maya Modeling and
+                                        Animation</a>
+                                </li>
+                                <li class="education__item">
+                                    <a href="https://www.masterstudies.com/institutions/ivano-frankivsk-national-technical-university-of-oil-and-gas"
+                                        class="education__link">Ivano-Frankivsk National Technical University of Oil and
+                                        Gas</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="learning__english" id="language">
+                            <h2>Language:</h2>
+                            <p>English-B1</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container footer-content">
+                <div class="footer-content__year-github">
+                    <p class="">2024</p>
+                    <a href="https://github.com/natmaksymiv" class="">natmaksymiv</a>
+                </div>
+                <a href="https://rs.school/courses/javascript-ru" class="rss"></a>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
