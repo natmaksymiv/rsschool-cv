@@ -34,7 +34,7 @@
                         <a href="#education" class="nav__link">education</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#english" class="nav__link">english</a>
+                        <a href="#language" class="nav__link">language</a>
                     </li>
                 </ul>
             </div>
@@ -67,7 +67,7 @@
                 <div class="info">
                     <section class="skills" id="skills">
                         <div class="skills__technical technical">
-                            <h2>technical skills</h2>
+                            <h2>technical skills:</h2>
                             <ul class="technical__list">
                                 <li class="technical__item">JS</li>
                                 <li class="technical__item">HTML</li>
@@ -79,7 +79,7 @@
                             </ul>
                         </div>
                         <div class="skills__soft soft">
-                            <h2>soft skills</h2>
+                            <h2>soft skills:</h2>
                             <ul class="soft__list">
                                 <li class="soft__item">Responsible and Organized</li>
                                 <li class="soft__item">Attentive to Details</li>
@@ -88,9 +88,58 @@
                             </ul>
                         </div>
                     </section>
+                    <section class="examples">
+                        <div class="examples__code" id="code">
+                            <h2>code:</h2>
+                            <pre>
+                                <code>
+let someArray = ["10", false, "", 10, "Natali"];
+
+if (Array.isArray(someArray)) {
+someArray.forEach((item, index) => {
+if (someArray[index] !== 10) {
+console.log(item);
+console.log('error');
+} else {
+console.log(item);
+console.log('ok');
+}
+})
+}
+                                </code>
+                            </pre>
+                        </div>
+                        <div class="examples__projects" id="projects">
+                            <h2>projects:</h2>
+                            <a href="https://github.com/natmaksymiv">CV (educational project)</a>
+                        </div>
+                    </section>
                     <section class="learning">
-                        <div class="learning__education"></div>
-                        <div class="learning__english"></div>
+                        <div class="learning__education education" id="education">
+                            <h2>Education:</h2>
+                            <ul class="education__list">
+                                <li class="education__item">
+                                    <a href="https://rs.school/courses/javascript-preschool-ru"
+                                        class="education__link">JS/FE Pre-school</a>
+                                </li>
+                                <li class="education__item">
+                                    <a href="https://itlogia.ru/" class="education__link">ITlogia</a>
+                                </li>
+                                <li class="education__item">
+                                    <a href="https://3d-ace.com/" class="education__link">3D Maya Modeling and
+                                        Animation</a>
+                                </li>
+                                <li class="education__item">
+                                    <a href="https://www.masterstudies.com/institutions/ivano-frankivsk-national-technical-university-of-oil-and-gas"
+                                        class="education__link">Ivano-Frankivsk National Technical University of Oil and
+                                        Gas</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="learning__english" id="language">
+                            <h2>Language:</h2>
+                            <p>English-B1</p>
+                        </div>
                     </section>
                 </div>
             </div>

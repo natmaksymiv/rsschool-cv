@@ -17,7 +17,7 @@ h2 {
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 1px;
-    color: #5ea0da;
+    color: #276ead;
 }
 h2 {
     margin-bottom: 25px;
@@ -98,9 +98,14 @@ main {
     aspect-ratio: 3 / 2;
     box-shadow: 0 1px 4px rgba(82, 15, 119, 0.6);;
 }
+.contacts,
+.skills,
+.examples,
+.learning {
+    margin-bottom: 50px;
+}
 .contacts {
     align-self: center;
-    margin-bottom: 50px;
 }
 .contacts__list {
 }
@@ -126,16 +131,39 @@ main {
 .contacts__item:nth-child(3)::before {
     background-image: url(../img/icons/discord.svg);
 }
-.contacts__item:not(:last-child) {
-    margin-bottom: 15px;
-}
+
 
 /* skills */
-.skills {
+.skills,
+.examples,
+.learning {
     display: flex;
     justify-content: space-evenly;
 }
-.technical__item,
-.soft__item:not(:last-child) {
+
+.contacts__item:not(:last-child),
+.technical__item:not(:last-child),
+.soft__item:not(:last-child),
+.education__item:not(:last-child) {
     margin-bottom: 15px;
 }
+
+/* examples */
+
+.examples__code pre {
+    white-space: pre-wrap;
+    word-break: break-all;
+    background-color: rgb(236, 240, 241);
+    border-radius: 1rem;
+    padding-left: 1.25rem;
+  }
+.examples__code pre > code {
+    border-radius: 1rem;
+    color: black;
+    line-height: 1.75rem;
+}
+
+
+
+
+
